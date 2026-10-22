@@ -161,6 +161,20 @@ a {
   margin-top: 38px;
 }
 
+.hero-overview {
+  display: grid;
+  gap: 6px;
+  max-width: 520px;
+  margin: 28px auto 0;
+  color: var(--muted);
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.hero-overview .no-wrap {
+  white-space: nowrap;
+}
+
 .button {
   display: inline-flex;
   min-height: 48px;
@@ -295,6 +309,26 @@ a {
   margin: 24px 0 0;
   color: var(--muted);
   font-size: 1.1rem;
+}
+
+.contact-actions {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.linkedin-link {
+  display: inline-flex;
+  color: var(--accent);
+  line-height: 0;
+  transition: transform 0.2s ease, filter 0.2s ease;
+}
+
+.linkedin-link:hover {
+  transform: translateY(-2px);
+  filter: brightness(1.12);
 }
 
 .contact-message a {
